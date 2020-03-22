@@ -1,2 +1,22 @@
 # ssdp
 linux command line ssdp (dlna) search tool.
+
+
+This is a stand alone ssdp utiliy, extracted from the upnpx project : https://github.com/fkuehne/upnpx
+
+
+
+Build & install:
+
+make
+sudo make install
+
+
+example:
+```
+ssdp-search -t 5 | grep ACT-Denon
+0035. full-usn=uuid:<obfuscated>::urn:schemas-denon-com:device:ACT-Denon:1, type=ACT-Denon, version=1, location=http://<obfuscated>/upnp/desc/aios_device/aios_device.xml
+```
+
+
+2020, Bruno Keymolen, bruno.keymolen@gmail.com
