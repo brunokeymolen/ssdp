@@ -7,13 +7,13 @@ extracted from the upnpx project at : https://github.com/fkuehne/upnpx
 
 
 
-* Build & install:
+## Build & install: 
 
-make
-sudo make install
+* make
+* sudo make install
 
 
-* example:
+## example:
 ```
 ssdp-search -t 5 | grep ACT-Denon
 0035. full-usn=uuid:<obfuscated>::urn:schemas-denon-com:device:ACT-Denon:1, type=ACT-Denon, version=1, location=http://<obfuscated>/upnp/desc/aios_device/aios_device.xml
