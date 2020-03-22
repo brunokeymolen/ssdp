@@ -105,7 +105,6 @@ int main(int argc, char *argv[])
 
     mm.dump_results();
 
-    delete(db);
     delete(ssdp);
 
 }

@@ -54,8 +54,8 @@ EXIT:
 }
 
 SSDPDB::~SSDPDB(){
-    //pthread_mutex_destroy(&mMutexAccess);
-    //pthread_mutexattr_destroy(&mMutexAccessAttr);
+    pthread_mutex_destroy(&mMutexAccess);
+    pthread_mutexattr_destroy(&mMutexAccessAttr);
 }
 
 
@@ -283,7 +283,7 @@ int SSDPDB::CacheControlLoop(){
         unsigned int i=0;
         while(i<mDevices.size()){
             thisdevice = mDevices[i];
-            if(thisdevice->lastupdate + thisdevice->cachecontrol <= nows){
+            if((time_t)(thisdevice->lastupdate + thisdevice->cachecontrol) <= nows){
                 mDevices.erase(mDevices.begin()+i);
                 delete(thisdevice);
                 updated++;
