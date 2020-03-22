@@ -54,8 +54,8 @@ EXIT:
 }
 
 SSDPDB::~SSDPDB(){
-    pthread_mutex_destroy(&mMutexAccess);
-    pthread_mutexattr_destroy(&mMutexAccessAttr);
+    //pthread_mutex_destroy(&mMutexAccess);
+    //pthread_mutexattr_destroy(&mMutexAccessAttr);
 }
 
 
