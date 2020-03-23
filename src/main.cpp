@@ -53,7 +53,7 @@ public:
           int x = 0;
           for(it=devices.begin();it<devices.end();it++){
               x++;
-              printf("%.4d. full-usn=%s, type=%s, version=%s, location=%s\n", x, ((SSDPDBDevice*)*it)->usn.c_str(), ((SSDPDBDevice*)*it)->type.c_str(), ((SSDPDBDevice*)*it)->version.c_str(), ((SSDPDBDevice*)*it)->location.c_str());
+              printf("%.3d. usn=%s, type=%s, version=%s, location=%s\n", x, ((SSDPDBDevice*)*it)->usn.c_str(), ((SSDPDBDevice*)*it)->type.c_str(), ((SSDPDBDevice*)*it)->version.c_str(), ((SSDPDBDevice*)*it)->location.c_str());
           }
           db_->Unlock();
     }
