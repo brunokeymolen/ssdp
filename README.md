@@ -1,3 +1,5 @@
+[![License Badge][]][License] [![Travis Status][]][Travis] [![Coverity Status][]][Coverity Scan]  
+
 # ssdp
 linux command line SSDP (DLNA/UPnP) search tool.
 
